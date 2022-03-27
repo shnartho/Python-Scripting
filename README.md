@@ -2,7 +2,6 @@
 University Based course on Python Programming 🔥🎯
 
 List of topics are covered/will be covered during classes 🏫
-
 1. Regex and JSON
 2. Web Scraping
 3. Image Processing
