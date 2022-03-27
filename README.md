@@ -1,5 +1,5 @@
 # Python-Scripting
-University Based course on Python Programming 🔥
+University Based course on Python Programming 🔥🎯
 
 List of topics are covered/will be covered during classes 🏫
 
