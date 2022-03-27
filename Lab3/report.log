@@ -1,0 +1,10 @@
+INFO:root:Project Start
+WARNING:root:line splitted
+WARNING:root:line splitted
+WARNING:root:line splitted
+WARNING:root:line splitted
+DEBUG:root:Number of Lines: 4
+INFO:root:Entries with 200: 2
+INFO:root:Entries with 404: 1 and Entries with 500: 1
+INFO:root:Merging failed lists
+INFO:root:printing html entries
