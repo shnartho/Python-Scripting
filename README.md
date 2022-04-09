@@ -13,5 +13,5 @@ List of topics are covered/will be covered during classes 🎒
 * Interacting with databases 📆<br>
 * Interacting with CSV and docs file 📁<br>
 * Data visualisation and Exploration 📂<br>
-* Pytest Framework 🎒<br>
+* Pytest Framework 🎒
 
