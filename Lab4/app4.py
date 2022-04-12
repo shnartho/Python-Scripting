@@ -19,6 +19,9 @@ def run():
     print("\nClass object:")
     objectLog1 = Logentry("190.192.13.1", "08/07/2020:00:09:07", "/index.html", 200)
     logging.warning("Html code is an int")
+    print("\n----------\n")
+    print(objectLog1)
+    print("\n------------\n")
     print(type(objectLog1.htmlCode))
     objectLog1.convertIntoString()
     print(repr(objectLog1))
@@ -64,6 +67,8 @@ def dateTimeSplitter(file):
     for line in file:
         splitline = line.split()[1]
         datetimelist.append(splitline)
+
+    # return [line.split()[1] for line in file]
     return datetimelist
 
 class Logentry:
@@ -79,11 +84,16 @@ class Logentry:
         strresourceFile = str(self.resourceFile)
         strhtmlCode = str(self.htmlCode)
         print("%s %s %s %s" % (strIPadress, strdate, strresourceFile, strhtmlCode))
+        # f = f"date: {self.date}"
+
 
     def showSeparately(self):
         print("IP: %s \nDate: %s\nResource file: %s\nHtml code: %s" % (self.IPadress, self.date, self.resourceFile, self.htmlCode))
     def show(self):
         print("%s %s %s %s" % (self.IPadress, self.date, self.resourceFile, self.htmlCode))
+
+    # def __str__(self):
+    #     return self.htmlCode
 
     def __repr__(self):
         rep = 'Representing instances:\n Ipaddress:' + str(self.IPadress) + ' Date:' + str(self.date) + ' Resource file: '+ str(self.resourceFile) +' Html code:'+ str(self.htmlCode)
@@ -101,7 +111,9 @@ def logEntryObjects(file):
     for line in file:
         splitline = line.split()
         html = ' '.join(splitline[3:])
+        # *list
         listOfObjects.append(Logentry(splitline[0], splitline[1], splitline[2], html))
+
 
 
     return listOfObjects

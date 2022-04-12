@@ -1,5 +1,3 @@
-import sys
-import fileinput
 import os
 import os.path
 import logging
@@ -95,7 +93,7 @@ def html_entries_fromdir():
     for i in os.listdir(path):
         # List files with .html
         if i.endswith(".html"):
-            print("Files with extension .py are:", i)
+            print("Files with extension .html are:", i)
 
 def html_entries(file):
     list_html = []
