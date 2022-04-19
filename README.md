@@ -15,3 +15,4 @@ List of topics are covered/will be covered during classes 🎒
 * Data visualisation and Exploration 📂<br>
 * Pytest Framework 🎒
 
+University: Wroclaw University of Science and Technology
