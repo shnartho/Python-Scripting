@@ -14,7 +14,10 @@ def run():
     set_logging_level()
     print("-" * 150)
     print_all_request(read_file)
+    print("-" * 150)
     print_requests_according_to_config(read_file)
+    print("-" * 150)
+
     searchEngine(read_file)
 
 
@@ -26,11 +29,15 @@ def read_configuration():
         with open(filename) as json_file:
             newDict = json.load(json_file)
         print("Readed successfully")
+
+    except FileNotFoundError:
+        print(f"file --{filename} does not exist")
+        sys.exit(1)
+
     except OSError:
         print(f"OS error occurred trying to open {filename}")
         sys.exit(1)
-    except FileNotFoundError:
-        print(f"file --{filename} does not exist")
+
     except ValueError:
         print(f"json file --{filename} is not correct")
     try:
@@ -98,13 +105,20 @@ def print_all_request(dict):
     assert counter != 1, "No match found!"
     assert counter != 1187, "Please Input IP in correct order!"
 
-def print_requests_according_to_config(d):
-    http_method = []
-    counter = 0
-    for x in d.values():
-        http = x[4].split(" ")[0]
-        if http == http_method:
-            print(x)
+def print_requests_according_to_config(dict):
+    newDict = {}
+    method = {}
+    numLine = {}
+    counter = 1
+    with open('configuration.json') as json_file:
+        newDict = json.load(json_file)
+        method = newDict.get("Method")
+        numLine = newDict.get("Number_of_Lines")
+    for x in dict:
+        if method in dict[x]:
+            print(str(counter) + " " + str(method) + " Method in request:" + x + " ------ " + dict[x])
+            if counter == numLine:
+                newval = input("\nEnter to continue")
             counter += 1
 
 def searchEngine(dict):

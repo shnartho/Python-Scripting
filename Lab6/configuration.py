@@ -12,6 +12,7 @@ def ask_configuration():
     ipAddress = str(input('IP Address(to be used as a filter for displaying) : '))
     loggingLevel = str(input('Logging level used by the application: '))
     numOfLines = input('Number of lines to be displayed at once: ')
+    method = input('Method: ')
     nameUser = str(input('Which Search Engine are you using (eg. www.bing.com ): '))
 
     configuration = {
@@ -19,6 +20,7 @@ def ask_configuration():
         "Ip_Address": ipAddress,
         "Logging_Level": loggingLevel,
         "Number_of_Lines": numOfLines,
+        "Method": method,
         "Name": nameUser
     }
     with open('configuration.json', 'w') as file:

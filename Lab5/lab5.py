@@ -11,6 +11,7 @@ def run():
     print("-" * 150)
     ipDictionary = ip_request(newDictionary)
     print("Number of requests: ", ipDictionary)
+    print_all_request_of_given_ip(newDictionary)
     print("-" * 150)
     print("-" * 150)
     print("Biggest request ip address is ",ip_find(onlyIp, True))
@@ -30,6 +31,17 @@ def ip_request(dict):
         ips[ipKey] = ips.get(ipKey, 0) + 1
     return ips
 
+def print_all_request_of_given_ip(dict):
+    newDict = {}
+    ip = {}
+    counter = 1
+    ip = "218.75.16.202"
+    print("Printing all request of given ip address 218.75.16.202")
+    for x in dict:
+        if ip in x:
+            print(str(counter)+ " " + str(ip) +" Ip request found in:"+ x + " ------ " + dict[x])
+            counter += 1
+
 def longest_request(dict):
     max = 0
     ip = {}
@@ -41,7 +53,6 @@ def longest_request(dict):
             lon_req = x
             lon_req = { "IP of the longest request": ip,"Max length": max}
     return lon_req
-
 
 def non_existent(dict):
     non_ex = []
@@ -80,11 +91,6 @@ def ip_find(ipDict, most_active: bool=False):
                     break
 
         return small_req
-
-
-
-
-
 
 def read_log():
     new_dictionary = {}
