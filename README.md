@@ -4,7 +4,7 @@ University Based course on Python Programming 🔥� <br>
 List of topics are covered/will be covered during classes 🎒
 <br>
 * Class & Objects 📗<br>
-* Tuples and lists 🟢<br>
+* Tuples, lists, Dictionary, Set 🟢<br>
 * Regex and JSON ⛑️<br>
 * Web Scraping ✈️<br>
 * Image Processing 🥇<br>
