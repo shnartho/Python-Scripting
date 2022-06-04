@@ -14,5 +14,6 @@ List of topics are covered/will be covered during classes 🎒
 * Interacting with CSV and docs file 📁<br>
 * Data visualisation and Exploration 📂<br>
 * Pytest Framework 🎒
+* Python for DevOps 🧰
 <br>
 <h5>University: Wroclaw University of Science and Technology 🏛️</h5>
