@@ -1,7 +1,5 @@
 import pytest
 
-def run():
-    print("+" + 80*"-" + "Lab 10"+ 80*"-" + "+")
 class BadHTTPVersion(Exception):
     pass
 class BadRequestTypeError(Exception):
@@ -49,12 +47,22 @@ def test_4():
 
 def test_5():
     assert reqstr2obj("PUT PUT / HTTP2.0") == None
-    assert reqstr2obj("PUT / HTTP 2.0") == None
     assert reqstr2obj("POST HTTP1.1") == None
-    assert reqstr2obj("PUT") == None
 
 def test_6():
+    with pytest.raises(BadRequestTypeError):
+        reqstr2obj("DOWNLOAD /movie.mp4 HTTP1.1")
+def test_7():
+    with pytest.raises(BadHTTPVersion):
+        reqstr2obj("GET /index HTTP50")
 
+def test_8():
+    with pytest.raises(ValueError) as new_exception:
+        reqstr2obj("GET index HTTP1.1")
+        assert "Path must start with /" in str(new_exception)
+
+def run():
+    print("+" + 80*"-" + "Lab 10"+ 80*"-" + "+")
 
 if __name__=="__main__":
     run()
