@@ -17,3 +17,4 @@ List of topics are covered/will be covered during classes 🎒
 * Python for DevOps 🧰
 <br>
 <h5>University: Wroclaw University of Science and Technology 🏛️</h5>
+<br>
