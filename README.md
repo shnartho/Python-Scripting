@@ -17,6 +17,6 @@ List of topics are covered/will be covered during classes 🎒
 * Python for DevOps 🧰
 <br>
 Python Pronect 1:
-
+Python Project 2:
 <h5>University: Wroclaw University of Science and Technology 🏛️</h5>
 <br>
