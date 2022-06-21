@@ -1,7 +1,7 @@
 # Python-Scripting🎯
 University Based course on Python Programming 🔥� <br>
 
-List of topics are covered/will be covered during classes 🎒
+List of topics are/will be covered during classes 🎒
 <br>
 * Class & Objects 📗<br>
 * Tuples, lists, Dictionary, Set 🟢<br>
