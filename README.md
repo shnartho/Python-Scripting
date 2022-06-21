@@ -16,6 +16,6 @@ List of topics are covered/will be covered during classes 🎒
 * Pytest Framework 🎒
 * Python for DevOps 🧰
 <br>
-Python Pronect 1: Document <br>
-Python Project 2:
+Python Pronect 1: Working with Docx<br>
+Python Project 2: Tkinter Application
 <h5>University: Wroclaw University of Science and Technology 🏛️</h5>
