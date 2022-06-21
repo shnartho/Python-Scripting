@@ -17,5 +17,5 @@ List of topics are covered/will be covered during classes 🎒
 * Python for DevOps(coming) 🧰
 <br>
 🟢Python Pronect 1: Working with Docx<br>
-Python Project 2: Tkinter Application
+🟢Python Project 2: Tkinter Application
 <h5>University: Wroclaw University of Science and Technology 🏛️</h5>
