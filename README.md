@@ -14,7 +14,7 @@ List of topics are covered/will be covered during classes 🎒
 * Interacting with CSV and docs file 📁<br>
 * Data visualisation and Exploration 📂<br>
 * Pytest Framework 🎒
-* Python for DevOps 🧰
+* Python for DevOps(coming) 🧰
 <br>
 Python Pronect 1: Working with Docx<br>
 Python Project 2: Tkinter Application
